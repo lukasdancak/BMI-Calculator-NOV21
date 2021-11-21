@@ -4,10 +4,14 @@ import javax.swing.*;
 
 public class Calculate {
     public static String calculateBmi(Double w, Double h) {
-        return String.valueOf( w/((h/100)*(h/100)) );
+        if (w<0 || h <0) {return "ERROR!";}
+        else { return String.valueOf( w/((h/100)*(h/100)) );}
     }
 
     public static Double getDouble(JTextField textfield) {
-        return Double.parseDouble(textfield.getText());
+         try {
+            return Double.parseDouble(textfield.getText());
+        } catch (Exception e) {JOptionPane.showMessageDialog(null, "You must enter your height and " +
+                "weight correctly"); return -1.0;}
     }
 }
