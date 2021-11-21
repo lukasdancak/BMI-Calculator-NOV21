@@ -14,7 +14,6 @@ public class GuiBmiCalculator {
 
         frameBmiCalculator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frameBmiCalculator.add(panelBmiCalculator);
-        frameBmiCalculator.pack(); // 65  The pack method sizes the frame so that all its contents are at or above their preferred sizes.
         frameBmiCalculator.setVisible(true);
 
         JButton btCalculate = new JButton("Calculate");
@@ -45,6 +44,8 @@ public class GuiBmiCalculator {
         JLabel calculationLabel = new JLabel("Insert data an press CALCULATE button");
         calculationLabel.setForeground(Color.red);
         panelBmiCalculator.add(calculationLabel);
+
+        frameBmiCalculator.pack(); // 65  The pack method sizes the frame so that all its contents are at or above their preferred sizes.
 
 
 
