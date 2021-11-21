@@ -5,6 +5,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * here is Gui for app.
+ * */
+
 public class GuiBmiCalculator {
 
     GuiBmiCalculator(){
@@ -20,7 +24,7 @@ public class GuiBmiCalculator {
 
 
 
-        // text field for height
+        // label for weight
         JLabel weightLabel = new JLabel("Input your weight in kg:");
         panelBmiCalculator.add(weightLabel);
 
@@ -46,7 +50,7 @@ public class GuiBmiCalculator {
         calculationLabel.setForeground(Color.red);
         panelBmiCalculator.add(calculationLabel);
 
-
+        // button for calculation
         JButton btCalculate = new JButton("Calculate");
         panelBmiCalculator.add(btCalculate);
         btCalculate.addActionListener(

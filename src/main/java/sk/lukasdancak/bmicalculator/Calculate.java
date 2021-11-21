@@ -2,6 +2,10 @@ package sk.lukasdancak.bmicalculator;
 
 import javax.swing.*;
 
+/**
+ * here are methods for calculations
+ * */
+
 public class Calculate {
     public static String calculateBmi(Double w, Double h) {
         if (w<0 || h <0) {return "ERROR!";}
