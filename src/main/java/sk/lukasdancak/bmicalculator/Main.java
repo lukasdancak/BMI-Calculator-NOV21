@@ -1,3 +1,7 @@
+/**
+ * jnjknkjnj
+ * */
+
 package sk.lukasdancak.bmicalculator;
 
 /**
