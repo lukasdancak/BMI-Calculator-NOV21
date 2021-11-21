@@ -1,5 +1,5 @@
 /**
- * jnjknkjnj
+ * This is simple BMI Calculator for fun.
  * */
 
 package sk.lukasdancak.bmicalculator;
