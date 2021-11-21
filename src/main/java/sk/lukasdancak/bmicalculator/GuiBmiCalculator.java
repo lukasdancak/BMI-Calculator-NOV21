@@ -50,8 +50,12 @@ public class GuiBmiCalculator {
         JButton btCalculate = new JButton("Calculate");
         panelBmiCalculator.add(btCalculate);
         btCalculate.addActionListener(
-                e->calculationLabel.setText(Calculate.calculateBmi(Calculate.getDouble(weightText), Calculate.getDouble(heightText)))
-                );
+                e->calculationLabel.setText(Calculate.calculateBmi(
+                        Calculate.getDouble(weightText),
+                        Calculate.getDouble(heightText)
+                                                                  )
+                                           )
+                                     );
 
 
 
