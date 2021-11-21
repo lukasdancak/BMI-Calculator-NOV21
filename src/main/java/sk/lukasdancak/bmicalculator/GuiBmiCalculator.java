@@ -2,6 +2,8 @@ package sk.lukasdancak.bmicalculator;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GuiBmiCalculator {
 
@@ -10,14 +12,13 @@ public class GuiBmiCalculator {
 
         JPanel panelBmiCalculator = new JPanel();
         panelBmiCalculator.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));
-        panelBmiCalculator.setLayout(new GridLayout(10,1));
+        panelBmiCalculator.setLayout(new GridLayout(0,1));
 
         frameBmiCalculator.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frameBmiCalculator.add(panelBmiCalculator);
         frameBmiCalculator.setVisible(true);
 
-        JButton btCalculate = new JButton("Calculate");
-        panelBmiCalculator.add(btCalculate);
+
 
         // text field for height
         JLabel weightLabel = new JLabel("Input your weight in kg:");
@@ -44,6 +45,15 @@ public class GuiBmiCalculator {
         JLabel calculationLabel = new JLabel("Insert data an press CALCULATE button");
         calculationLabel.setForeground(Color.red);
         panelBmiCalculator.add(calculationLabel);
+
+
+        JButton btCalculate = new JButton("Calculate");
+        panelBmiCalculator.add(btCalculate);
+        btCalculate.addActionListener(
+                e->calculationLabel.setText(Calculate.calculateBmi(Calculate.getDouble(weightText), Calculate.getDouble(heightText)))
+                );
+
+
 
         frameBmiCalculator.pack(); // 65  The pack method sizes the frame so that all its contents are at or above their preferred sizes.
 
