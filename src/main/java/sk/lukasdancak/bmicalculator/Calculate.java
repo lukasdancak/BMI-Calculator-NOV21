@@ -8,6 +8,8 @@ import javax.swing.*;
  * */
 
 public class Calculate {
+
+    // return string with BM index + category description
     public static String calculateBmi(Double w, Double h) {
         if (w<0 || h <0) {return "ERROR!";}
         else {  String result ="";
@@ -17,9 +19,8 @@ public class Calculate {
                 return result;  }
     }
 
+    // return bmi category description
     private static String info(double d) {
-
-
             if(d<16.0){ return "Underweight (Severe thinness)"; }
             else if(d <17.0) { return "Underweight (Moderate thinness) ";}
             else if( d <18.5) { return "Underweight (Mild thinness) ";}
@@ -28,9 +29,9 @@ public class Calculate {
             else if(d <35) { return "Obese (Class I)";}
             else if(d <40) { return "Obese (Class II)";}
             else { return "Obese (Class III)";}
-
     }
 
+    // return double from JTextField
     public static Double getDouble(JTextField textfield) {
          try {
             return Double.parseDouble(textfield.getText());
