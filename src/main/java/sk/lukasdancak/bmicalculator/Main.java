@@ -6,6 +6,7 @@ package sk.lukasdancak.bmicalculator;
 
 /**
  * this is main class.
+ * @author Lukas Dancak SVK
  * */
 
 public class Main {
