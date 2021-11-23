@@ -15,7 +15,7 @@ public class Calculate {
         else {  String result ="";
                 double d =  w/((h/100)*(h/100));
                  result = result +  String.valueOf( Math.round(d*10.0)/10.0 ) ;
-                 result = result+" | "+ Calculate.info(d);
+                 result = result+" => "+ Calculate.info(d);
                 return result;  }
     }
 
