@@ -33,7 +33,7 @@ public class GuiBmiCalculator {
         panelBmiCalculator.add(weightText);
 
         // label for height
-        JLabel heightLabel = new JLabel("Input our weight in cm:");
+        JLabel heightLabel = new JLabel("Input your height in cm:");
         panelBmiCalculator.add(heightLabel);
 
         // text field for height
@@ -41,14 +41,15 @@ public class GuiBmiCalculator {
         panelBmiCalculator.add(heightText);
 
         // label with answer INTRO
-        JLabel answerLabel = new JLabel("Your calculated BMI is:");
+        JLabel answerLabel = new JLabel("Your calculated Body Mass Index and category you fall into are:");
         panelBmiCalculator.add(answerLabel);
         answerLabel.setHorizontalAlignment(JLabel.CENTER);
 
         // label with answer
-        JLabel calculationLabel = new JLabel("Insert data an press CALCULATE button");
+        JLabel calculationLabel = new JLabel("Insert data correctly and press CALCULATE button");
         calculationLabel.setForeground(Color.red);
         panelBmiCalculator.add(calculationLabel);
+        calculationLabel.setHorizontalAlignment(JLabel.CENTER);
 
         // button for calculation
         JButton btCalculate = new JButton("Calculate");
